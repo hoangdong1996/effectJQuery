@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<button>Start</button>
+<p>Nội dung</p>
+<div id="box" style="background-color: coral; position: absolute; width: 200px; height:200px; font-size: 15px ">
+    Hello
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("div").animate({left: '200px'});
+            $("div").animate({fontSize: '100px'});
+        });
+    });
+</script>
+</body>
+</html>
